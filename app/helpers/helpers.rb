@@ -1,6 +1,7 @@
 class Helpers
 
   def current_user(session)
+    binding.pry
     User.all.each do |user|
       if user.id == session[:id]
         return user
