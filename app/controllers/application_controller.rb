@@ -23,7 +23,6 @@ class ApplicationController < Sinatra::Base
         session[:user_id] = @user.id
         redirect to "/account"
       end
-      session[:id] = @user.id
       redirect to "error"
     end
 
